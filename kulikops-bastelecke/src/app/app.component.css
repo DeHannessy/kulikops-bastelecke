@@ -1,29 +1,39 @@
 .navbar {
   position: absolute;
   z-index: 100;
-  background-color: #121212;
+  background-color: #131320;
   top: 1vh;
   left: 1vh;
-  border-radius: 7px;
+  border-radius: 15px;
   padding: 0;
 }
 
 .navbar-opened {
-  height: 98vh;
+  max-height: 98vh;
   width: 15%;
 }
 
 .navbar-container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  top: 0;
+  height: 100%;
+  padding: 5px;
 }
-
 
 .navbar-toggler {
   color: white;
-  width: 80px;
-  height: 50px;
   cursor: pointer;
+  border: none;
+}
+.menu-icon {
+  font-size: 40px;
+  padding: 2px;
+}
+
+.navbar-content {
+  height: 100%;
+}
+
+.hidden {
+  display: none;
 }
