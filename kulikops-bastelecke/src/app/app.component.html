@@ -1,16 +1,24 @@
-<div class="navbar" [class.navbar-opened]="navbarOpened">
-  <div class="navbar-container">
-    <div class="navbar-toggler" (click)="navbarOpened = !navbarOpened"><span class="material-symbols-outlined menu-icon">menu</span></div>
-    <div class="navbar-content" [class.hidden]="!navbarOpened">
-      <a routerLink="/home">home</a><br>
-      <a routerLink="/climbing">climbing</a><br>
-      <a routerLink="/KoT">kot</a><br>
-      
+<div class="top-container">
+  <div class="navbar" [class.navbar-opened]="navbarOpened">
+    <div class="navbar-container">
+      <div class="navbar-content">  
+        <div class="navbar-item" (click)="navbarOpened = !navbarOpened">
+          <span class="material-symbols-outlined navbar-icon">menu</span>
+        </div>
+        <div class="navbar-item">
+          <a routerLink="/home"><span class="material-symbols-outlined navbar-icon">home</span></a><br>
+        </div>
+        <div class="navbar-item">
+          <a routerLink="/climbing"><span class="material-symbols-outlined navbar-icon">hiking</span></a><br>
+        </div>
+        <div class="navbar-item">
+          <a routerLink="/KoT"><span class="material-symbols-outlined navbar-icon">stadia_controller</span></a><br>
+        </div>        
+      </div>
     </div>
   </div>
-</div>
-
-
-<div class="content">
-  <router-outlet></router-outlet>
+  
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>

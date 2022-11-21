@@ -1,15 +1,15 @@
 .navbar {
-  position: absolute;
   z-index: 100;
-  background-color: #131320;
+  background-color: #2a2c36;
   top: 1vh;
   left: 1vh;
   border-radius: 15px;
   padding: 0;
+  height: 98vh;
+  margin-right: 2vh;
 }
 
 .navbar-opened {
-  max-height: 98vh;
   width: 15%;
 }
 
@@ -25,9 +25,22 @@
   cursor: pointer;
   border: none;
 }
-.menu-icon {
-  font-size: 40px;
-  padding: 2px;
+
+.navbar-icon {
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.navbar-icon:hover {
+  color: #15151b;
+  background: white;
 }
 
 .navbar-content {
@@ -36,4 +49,12 @@
 
 .hidden {
   display: none;
+}
+
+.content {
+  width: 100% ;
+}
+
+.top-container {
+  display: flex;
 }
