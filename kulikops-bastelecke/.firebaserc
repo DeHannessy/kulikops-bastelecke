@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kulikops-bastelecke": {
+      "hosting": {
+        "kulikops-bastelecke": [
+          "kulikops-bastelecke"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kulikops-bastelecke"
+  }
+}

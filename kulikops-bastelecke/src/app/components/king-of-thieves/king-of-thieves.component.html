@@ -1,1 +1,16 @@
 <h1>King of Thieves</h1>
+<div>
+  <h1>Dungeon Designer</h1>
+  <h2>Welcome to the dungeon Designer!</h2>
+  <h3>
+    Made by <b>kulikop</b>
+    <img src="/assets/king-of-thieves/small_panda.png" />
+  </h3>
+  <input id="antigravity" type="checkbox" oninput="selectAg()">
+  <label for="antigravity">Select to place antigravity</label>
+  <div>
+    <div class="row" *ngFor="let row of blocks">
+      <div class="block" [class.selected-block]="block" *ngFor="let block of row" (click)="onBlockClick(block)"></div>
+    </div>
+  </div>
+</div>

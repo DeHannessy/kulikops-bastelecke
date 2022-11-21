@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  margin: 0;
+}
+
+.block {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 0;
+}
+
+.selected-block {
+  background-color: black;
+  border-color: white;
+}
