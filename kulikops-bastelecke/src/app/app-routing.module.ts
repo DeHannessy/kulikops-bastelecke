@@ -4,6 +4,7 @@ import { ClimbingComponent } from './components/climbing/climbing.component';
 import { HomeComponent } from './components/home/home.component';
 import { KingOfThievesComponent } from './components/king-of-thieves/king-of-thieves.component';
 import { NotesComponent } from './components/notes/notes.component';
+import { BookComponent } from './components/book/book.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'climbing', component: ClimbingComponent },
   { path: 'KoT', component: KingOfThievesComponent },
   { path: 'notes', component: NotesComponent },
+  { path: 'book', component: BookComponent },
 ];
 
 @NgModule({

@@ -18,6 +18,7 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NotesComponent } from './components/notes/notes.component';
+import { BookComponent } from './components/book/book.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotesComponent } from './components/notes/notes.component';
     HomeComponent,
     ClimbingComponent,
     KingOfThievesComponent,
-    NotesComponent
+    NotesComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
