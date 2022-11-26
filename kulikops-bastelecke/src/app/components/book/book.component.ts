@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookComponent implements OnInit {
   public showThoughts = true;
-  
+  public showPrivateStuff = false;
+
   constructor() { }
 
   ngOnInit(): void {
