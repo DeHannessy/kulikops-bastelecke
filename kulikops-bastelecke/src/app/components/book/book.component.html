@@ -1,3 +1,6 @@
+<div class="settings">
+  <button (click)="showThoughts = !showThoughts">Toggle thoughts</button>
+</div>
 <h1>Velech scho</h1>
 <p>
   I just rubbed my eyes like never before. I knew the day would come. I'm sitting in my room, it's 23:54. Almost time, I just realized. Time to change. Now. I changed. 26.11.2022, 23:55:20.
@@ -21,17 +24,20 @@
   Sinja planned to go there and really wanted to take pictures. There were people waiting, and I randomly became an introvert, so I didn't want to go anymore. Sinja was able to überzeugen mich to do it anyways, which 
   was cool. After we took the pictures, we found out it really took analog pictures which took 6 minutes to print. We were not prepared to take the first two pictures, this dumb photoautomat just started taking pictures. 
   The other ones are looking good. It was already late so we took the train back to Olten and went to Sinjas house. She wanted to watch titanic with me.
+  <span class="thought" *ngIf="showThoughts">
+    This is about the first thing Sinja wanted to do with me, after we came together. Maybe even before. During the whole year, from time to time Sinja told me: "Ooh we finally need to watch Titanic together". Pretty fucking sad
+    it ended with the thing she wanted to do first. Somehow pretty fucking beautiful. Actually one of the reasons for me to write this, because its some serious Drama content.
+  </span>
 </p>
-<p>
-  This is about the first thing Sinja wanted to do with me, after we came together. Maybe even before. During the whole year, from time to time Sinja told me: "Ooh we finally need to watch Titanic together". Pretty fucking sad
-  it ended with the thing she wanted to do first. Somehow pretty fucking beautiful. <span class="thought">Actually one of the reasons for me to write this, because its some serious Drama content.</span>
-</p>
+ 
 <p>
   So we arrived at Sinjas house. She ringed the bell because she was tired of opening the app, whilst I locked my red Bycicle. Livia opened the door and let us in. I put of my shoes and hung up my new, dark turquoise 
   Daunen Jacket. First, I formed a ball of it, like I did an hour ago, just to get impressed by how small and light it is. We heard Livia talking to someone in the living room, which made Sinja really happy. "OMG, Livia
   didn't have friends for four years", she whispered to me, and laughed. 
-  <span class="thought">
-    At this point, I want to make a new menu Icon on the website for this book. All the time i spent on this website, I wondered    what I'm going to do with it, what I'm going to program on it. It was all for 
-    this book.
+  <span class="thought" *ngIf="showThoughts">
+    At this point, I want to make a new menu Icon on the website for this book. All the time i spent on this website, I wondered what I'm going to do with it, what I'm going to program on it. It was all for 
+    this book. I'm feeling like I'm loosing all my emotions by writing everything down, I forgot how I should be feeling.
   </span>
+  We walked past the living room, into the small TV Room with a couch. Sinja put two packs of Microwave Popcorn into the microwave and gave one to Livia and her friend. I sat on the couch, Sinja next to me. She pressed
+  the play button. 
 </p>
