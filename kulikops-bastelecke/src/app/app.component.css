@@ -1,8 +1,8 @@
 .navbar {
   z-index: 100;
   background-color: #2a2c36;
-  top: 1vh;
   left: 1vh;
+  top: 1vh;
   border-radius: 15px;
   padding: 0;
   height: 98vh;
@@ -58,4 +58,5 @@
 
 .top-container {
   display: flex;
+  min-height: 100vh;
 }
