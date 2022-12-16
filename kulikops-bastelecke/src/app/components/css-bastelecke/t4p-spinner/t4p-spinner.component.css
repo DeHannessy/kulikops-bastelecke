@@ -1,0 +1,217 @@
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10rem 0;
+  overflow: hidden;
+}
+
+/* t4p-jumping */
+.t4p-jumping {
+  position: relative;
+  height: 50px;
+  color: #e42312;
+}
+
+.t4p-jumping img {
+  height: 50px;
+}
+
+.t4p-jumping::after {
+  position: absolute;
+  font-size: 30px;
+  bottom: 0;
+  letter-spacing: -15px;
+  font-weight: bold;
+  content: "";
+}
+
+
+/* letter T */
+.letter-T {
+  animation: T-typing 5s infinite ease;
+}
+.letter-T::after {
+  animation: ime 5s infinite ease;
+  left: 15px;
+}
+
+
+/* letter 4 */
+.letter-4 {
+  margin: 0 3px 0 -25px;
+  animation: four-typing 5s infinite ease;
+}
+.letter-4::after {
+  animation: or 5s infinite ease;
+  left: 30px;
+}
+
+/* letter P */
+.letter-P {
+  animation: P-typing 5s infinite ease;
+}
+.letter-P::after {
+  animation: roject 5s infinite ease;
+  left: 0;
+}
+
+@keyframes ime {
+  65% {
+    content: "";
+  }
+  65.1% {
+    content: "IME";
+    color: #e4231200;
+    letter-spacing: -15px;
+    transform: translateX(0);
+  }
+  77%, 88% {
+    letter-spacing: 7px;
+    transform: translateX(30px);
+    color: #e42312;
+  }
+  99.9% {
+    color: #e4231200;
+    content: "IME";
+    letter-spacing: -15px;
+    transform: translateX(0);
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes or {
+  65% {
+    content: "";
+  }
+  65.1% {
+    content: "OR";
+    color: #e4231200;
+    letter-spacing: -15px;
+    transform: translateX(0);
+  }
+  77%, 88% {
+    letter-spacing: 7px;
+    transform: translateX(20px);
+    color: #e42312;
+  }
+  99.9% {
+    color: #e4231200;
+    content: "OR";
+    letter-spacing: -15px;
+    transform: translateX(0);
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes roject {
+  65% {
+    content: "";
+  }
+  65.1% {
+    content: "ROJECT";
+    color: #e4231200;
+    letter-spacing: -15px;
+    transform: translateX(0);
+  }
+  77%, 88% {
+    letter-spacing: 7px;
+    transform: translateX(35px);
+    color: #e42312;
+  }
+  99.9% {
+    color: #e4231200;
+    content: "ROJECT";
+    letter-spacing: -15px;
+    transform: translateX(0);
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes T-typing {
+  0%, 8%, 16%, 4%, 12%, 20% {
+    transform: translateY(0);
+  }
+  2%, 10%, 18% {
+    transform: translateY(-25px);
+  }
+  25% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  40% {
+    transform: scale(2.1) translateX(-7px);
+  }
+  45% {
+    transform: scale(2) translateX(-7px);
+  }
+  65% {
+    transform: scale(1) translateX(0) rotateY(360deg);
+  }
+  77%, 88% {
+    transform: translateX(-120px);
+  }
+}
+
+@keyframes four-typing {
+  1.5%, 9.5%, 17.5%, 5.5%, 13.5%, 21.5% {
+    transform: translateY(0);
+  }
+  3.5%, 11.5%, 19.5% {
+    transform: translateY(-25px);
+  }
+  25% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.8);
+  }
+  40% {
+    transform: scale(2.1);
+  }
+  45% {
+    transform: scale(2);
+  }
+  65% {
+    transform: scale(1) rotateY(360deg);
+  }
+  77%, 88% {
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes P-typing {
+  3%, 11%, 19%, 7%, 15%, 23% {
+    transform: translateY(0);
+  }
+  5%, 13%, 21% {
+    transform: translateY(-25px);
+  }
+  25% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.8) translateX(-8px);
+  }
+  40% {
+    transform: scale(2.1) translateX(20px);
+  }
+  45% {
+    transform: scale(2) translateX(19px);
+  }
+  65% {
+    transform: scale(1) translateX(0) rotateY(360deg);
+  }
+  77%, 88% {
+    transform: translateX(50px);
+  }
+}

@@ -1,8 +1,10 @@
+<h1 *ngIf="!isAuthenticated">Book</h1>
 <div class="auth-container" *ngIf="!isAuthenticated">
+
   <input type="password" (dblclick)="checkPassword()" [(ngModel)]="inputPassword">
 </div>
 
-<div *ngIf="isAuthenticated">
+<div class="book-container" *ngIf="isAuthenticated">
   <div class="settings">
     <button (click)="showThoughts = !showThoughts">Toggle thoughts</button>
     <button (click)="showPrivateStuff = !showPrivateStuff">Toggle Private stuff</button>

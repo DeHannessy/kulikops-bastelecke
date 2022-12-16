@@ -5,13 +5,9 @@
   top: 1vh;
   border-radius: 15px;
   padding: 0;
-  height: 98vh;
+  height: calc(100%);
   margin-right: 2vh;
   position: sticky;
-}
-
-.navbar-opened {
-  width: 15%;
 }
 
 .navbar-container {
@@ -25,6 +21,9 @@
   color: white;
   cursor: pointer;
   border: none;
+}
+
+.navbar-closed {
 }
 
 .navbar-icon {
@@ -44,16 +43,12 @@
   background: white;
 }
 
-.navbar-content {
-  height: 100%;
-}
-
 .hidden {
   display: none;
 }
 
 .content {
-  width: 100% ;
+  width: 100%;
 }
 
 .top-container {

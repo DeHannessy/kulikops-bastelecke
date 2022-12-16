@@ -21,6 +21,8 @@ import { NotesComponent } from './components/notes/notes.component';
 import { BookComponent } from './components/book/book.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CssBasteleckeComponent } from './components/css-bastelecke/css-bastelecke.component';
+import { T4pSpinnerComponent } from './components/css-bastelecke/t4p-spinner/t4p-spinner.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ClimbingComponent,
     KingOfThievesComponent,
     NotesComponent,
-    BookComponent
+    BookComponent,
+    CssBasteleckeComponent,
+    T4pSpinnerComponent
   ],
   imports: [
     BrowserModule,

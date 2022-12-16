@@ -1,10 +1,10 @@
 <div class="top-container">
-  <div class="navbar" [class.navbar-opened]="navbarOpened">
+  <div class="navbar" [class.navbar-closed]="!navbarOpened">
     <div class="navbar-container">
-      <div class="navbar-content">  
-        <div class="navbar-item" (click)="navbarOpened = !navbarOpened">
-          <span class="material-symbols-outlined navbar-icon">menu</span>
-        </div>
+      <div class="navbar-item" (click)="navbarOpened = !navbarOpened" [class.navbar-closed]="!navbarOpened">
+        <span class="material-symbols-outlined navbar-icon">menu</span>
+      </div>
+      <div>
         <div class="navbar-item">
           <a routerLink="/home"><span class="material-symbols-outlined navbar-icon">home</span></a><br>
         </div>
@@ -20,10 +20,13 @@
         <div class="navbar-item">
           <a routerLink="/book"><span class="material-symbols-outlined navbar-icon">menu_book</span></a><br>
         </div>
+        <div class="navbar-item">
+          <a routerLink="/css"><span class="material-symbols-outlined navbar-icon">css</span></a><br>
+        </div>
       </div>
     </div>
   </div>
-  
+
   <div class="content">
     <router-outlet></router-outlet>
   </div>
