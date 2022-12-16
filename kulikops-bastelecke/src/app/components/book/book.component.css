@@ -13,3 +13,19 @@ p, h1, h2 {
   max-width: 1000px;
   margin-left: 10%;
 }
+
+.auth-container {
+  margin: 25% 0 0 40%;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: transparent;
+}
+input:focus {
+  outline: none;
+}
+input::selection {
+  color: transparent;
+}
