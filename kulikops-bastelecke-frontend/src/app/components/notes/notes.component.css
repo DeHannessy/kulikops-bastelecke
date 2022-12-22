@@ -1,0 +1,56 @@
+/* Whole container and cursed background */
+
+:host {
+  --background: #1c292f;
+  --background-light: #1b3238;
+  --green: #6bde3b;
+  --text-color: #1f5e6b;
+}
+
+.notes-container {
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+  color: var(--text-color);
+  font-family: "Roboto Mono", "Roboto Mono", "Vazirmatn";
+  padding: 1vh;
+}
+.notes-container::before {
+  content: "";
+  position: fixed;
+  background-color: var(--background);
+  height: 100%;
+  width: 200px;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+
+h1 {
+  color: white;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 10px;
+  background-color: var(--background-light);
+  border: none;
+  width: 48%;
+  color: var(--green);
+  border-radius: 9px;
+}
+input:nth-child(2) {
+  text-align: right;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #1f5e6b;
+}
