@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CssBasteleckeComponent } from './components/css-bastelecke/css-bastelecke.component';
 import { T4pSpinnerComponent } from './components/css-bastelecke/t4p-spinner/t4p-spinner.component';
+import { TodoComponent } from './components/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { T4pSpinnerComponent } from './components/css-bastelecke/t4p-spinner/t4p
     NotesComponent,
     BookComponent,
     CssBasteleckeComponent,
-    T4pSpinnerComponent
+    T4pSpinnerComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
