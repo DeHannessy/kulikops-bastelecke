@@ -1,6 +1,6 @@
 .navbar {
   z-index: 100;
-  background-color: #2a2c36;
+  background-color: var(--color-background-primary);
   left: 1vh;
   top: 1vh;
   border-radius: 15px;
@@ -18,7 +18,7 @@
 }
 
 .navbar-toggler {
-  color: white;
+  color: var(--color-text-primary);
   cursor: pointer;
   border: none;
 }
@@ -30,7 +30,7 @@
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
-  color: white;
+  color: var(--color-text-primary);
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -39,8 +39,8 @@
   cursor: pointer;
 }
 .navbar-icon:hover {
-  color: #15151b;
-  background: white;
+  color: var(--color-background-primary);
+  background: var(--color-highlight);
 }
 
 .hidden {

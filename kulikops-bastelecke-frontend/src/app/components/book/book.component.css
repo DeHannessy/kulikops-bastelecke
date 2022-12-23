@@ -1,6 +1,6 @@
 .thought {
   font-style: italic;
-  color: #b3b3b3;
+  color: var(--color-text-secondary);
 }
 
 .settings {

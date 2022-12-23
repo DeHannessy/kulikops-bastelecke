@@ -6,6 +6,7 @@ import { KingOfThievesComponent } from './components/king-of-thieves/king-of-thi
 import { NotesComponent } from './components/notes/notes.component';
 import { BookComponent } from './components/book/book.component';
 import { CssBasteleckeComponent } from './components/css-bastelecke/css-bastelecke.component';
+import { TodoComponent } from './components/todo/todo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'notes', component: NotesComponent },
   { path: 'book', component: BookComponent },
   { path: 'css', component: CssBasteleckeComponent },
+  { path: 'todo', component: TodoComponent },
 ];
 
 @NgModule({
