@@ -5,17 +5,31 @@
     <input id="new-note-input" placeholder="new note title" tabindex="2" [(ngModel)]="newNote" (keydown.enter)="addNewNote()">
   </div>
 
-  <div class="note-pre-list">
-    <!-- Note -->
-    <div class="note-pre" *ngFor="let note of notes" tabindex="4">
-      <div class="note-pre-title">
-        {{ note[0] }}
-      </div>
-      <div class="note-pre-content">
-        {{ note[1] }}
+
+  <div class="flexxx">
+    <!-- Selected Note -->
+    <div class="note-sel-container" *ngIf="">
+      <div class="note-sel">
+        <div class="note-sel-title">
+          {{ notes[0][0] }}
+        </div>
+        <div class="note-sel-content">
+          {{ notes[0][1] }}
+        </div>
       </div>
     </div>
-
+    
+    <!-- Preview Notes -->
+    <div class="note-pre-list">
+      <div class="note-pre" *ngFor="let note of notes" tabindex="4">
+        <div class="note-pre-title">
+          {{ note[0] }}
+        </div>
+        <div class="note-pre-content">
+          {{ note[1] }}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
