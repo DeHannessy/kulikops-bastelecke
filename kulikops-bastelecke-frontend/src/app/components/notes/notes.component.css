@@ -24,7 +24,16 @@ input {
 input:nth-child(2) {
   text-align: right;
 }
-.note-pre:focus, input:focus {
+
+.flexxx {
+  margin-top: 1vh;
+  display: flex;
+  gap: 1vh;
+  height: 100%;
+}
+
+/* Note Preview */
+.note-pre:focus, input:focus, .note-sel-container:focus {
   border: 1px solid var(--color-highlight);
   outline: none;
 }
@@ -33,10 +42,10 @@ input::placeholder {
 }
 
 .note-pre-list {
+  width: 50%;
   display: flex;
   gap: 1vh;
   flex-wrap: wrap;
-  margin-top: 1vh;
 }
 
 .note-pre {
@@ -49,7 +58,7 @@ input::placeholder {
   border-radius: 12px;
 }
 
-.note-pre-title {
+.note-sel-title, .note-pre-title {
   font-size: 23px;
 }
 
@@ -58,6 +67,22 @@ input::placeholder {
   overflow: hidden;
 }
 
+.note-sel-content {
+  max-height: 50px;
+}
+
+/* Selected Note */
+.note-sel-container {
+  min-width: 300px;
+  width: 50%;
+  padding: 20px;
+  background-color: var(--color-background-secondary);
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+.note-sel-container:focus {
+  border: 1px solid var(--color-highlight);
+}
 
 @media screen and (max-width: 650px) {
   .input-container,.note-pre-list {
