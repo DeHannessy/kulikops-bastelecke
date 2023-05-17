@@ -1,4 +1,4 @@
-<div class="top-container">
+<div class="top-container" *ngIf="isAuthenticated">
   <div class="navbar">
     <div class="navbar-container" [class.navbar-closed]="!navbarOpened">
       <div class="toggler navbar-item" (click)="navbarOpened = !navbarOpened" >
@@ -33,4 +33,7 @@
   <div class="content">
     <router-outlet></router-outlet>
   </div>
+</div>
+<div class="auth-container" *ngIf="!isAuthenticated">
+  <input type="password" (dblclick)="checkPassword()" [(ngModel)]="inputPassword">
 </div>

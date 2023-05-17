@@ -25,7 +25,6 @@ import { CssBasteleckeComponent } from './components/css-bastelecke/css-bastelec
 import { T4pSpinnerComponent } from './components/css-bastelecke/t4p-spinner/t4p-spinner.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { HttpClientModule } from '@angular/common/http';
-import { HegeshumeneComponent } from './hegeshumene/hegeshumene.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,6 @@ import { HegeshumeneComponent } from './hegeshumene/hegeshumene.component';
     CssBasteleckeComponent,
     T4pSpinnerComponent,
     TodoComponent,
-    HegeshumeneComponent
   ],
   imports: [
     BrowserModule,

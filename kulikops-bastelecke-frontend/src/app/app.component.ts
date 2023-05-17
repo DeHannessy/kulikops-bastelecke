@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'kulikops-bastelecke';
   navbarOpened = false;
+  isAuthenticated = false;
+  inputPassword = "";
+  password = "Love Peace & Happiness";
+
+  checkPassword() {
+    if (this.inputPassword === this.password) {
+      this.isAuthenticated = true;
+      this.inputPassword = "";
+    }
+  }
 }
