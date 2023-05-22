@@ -3,44 +3,6 @@
 
   <input type="password" (dblclick)="checkPassword()" [(ngModel)]="inputPassword">
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="book-container" *ngIf="isAuthenticated">
   <div class="settings">
     <button (click)="showThoughts = !showThoughts">Toggle thoughts</button>
@@ -195,4 +157,9 @@ Soo, also jetzt chöme mer zum Fritig
 Am Fritig Morge simmer ufgstande, schnäll es Kafi trunke ond hend üüs am 10i vor em hostel mit em Marc, lele, nicce, severin, mia ond Luca troffe, zum go bouldere. Mer hei de Bus gno, das mer ned so lang müsse laufe, ond das Ticket-chauf-system vom bus chauffeur isch kabutt gsi, dromm hei mer gratis chönne fahre😂Die Boulder halle isch denn mega mega cool gsi, s het würklech cool routene gha, mega spannendi moves ond so, zuesätzlich het me ebe au no zum einte Tor use chönne luege uf e grossi Kanal und de reste vo amsterdam. Ächt, e super sach gsi. E ha au no stickers mitgno für d Muriel, aber weiss ned öb si se cool findet well si nüt cha demit aafo😂s stoht halt eifach Monk druffe🤙🏻uf em Rückweg fo de Boulderhalle hemmer wider chönne gratis busfahre haha ond denn simmer nöime go Pommes esse, ond mit Verspötig zum Fabrique des lumieres gloffe. S Fabrique des lumieres isch so wie es Museum, fo dete hani der au en snap gschickt, jael. Es isch eigentlech ganz en grossi Halle wo mega läär isch, s het aber ganz vell Lüüt gha wo überall umeghocket ond umegstande sind. Es hett so gigantischi Beamer wo eifach die kompletti halle belüchte ond denne lauft eigentlech so es video, met mega krasse illusione ond animatione ond so, eifach s ganze gebäude eigenltech. Dasch sehr lustig gsi, ond eifach beiidruckend wells so di ganz want bewegt het haha. Joo, uf jede fall simmer denne velecht nach einehalb stund weder gange, vis à vis hets es streetfood festival gha, denne simmer döte nöime öppis go trinke ond hei no chli öppis gässe. Die andere hei det churros gno, ond si si immer no de feste überzüügig, das das die beste Churros sind gsi wo existiere haah. S het imfall eifach en lade gha wo "milf" gheisse het, ond weisch für was isch es gstande? Man, I love Fish. Also come on, wenn das nid extra so gmacht worde isch, denne weissi eifach au ned hahaha, aber jo dasch funny gsii. Denne hei mer üüs uf e rückweg ins hostel gmacht ond hei unterwegs nöime no en billigi glace gschnauset, so es grosses cornet mit chugele, für nume 1.90! scho crazy, wie billig alles isch, im Usland. E han denn eigentlech gar kei znacht möge esse, welli zum zmittag scho 2 salamisandwich gässe ha, ond denne no vill z vill vo denne fries haha, die si ebe scho no  fein gsi. 
 S esch de übrigens mittlerwiile 2 i de Nacht, e be vorher hei choo ond ha dänkt e schriibe no chli wiiter a däm. es zieht sech ebe, e muess me schriibe alsi ha erwartet😅aber do beni au chli sälber t schuld. E mache de morn homeoffice, de chani no chli länger schloofe ond mache ned ganz so vill Minusstunde wie süscht immer, lol. Auso, de fritig. E ha glaub gar nüt znacht gha, aber uf jede Fall hei mer im Hostel denne es Beer pong gspillt, eg und de Marc hend gege d Joelle ond de Niklas gwunneee, juhuu, do beni scho chli stolz gsi. En pitcher zum gläser fülle het nume 10.- kostet, obwohl det irgendwie 1.6 liter bier dinne isch. verstohni immer noni ganz, well en halbe liiter het mindistens 5 kostet. ergendöppis esch ned ganz ufgange. Nochdem mer gwnne hei simmer denn no id stadt gangen öppis go esse, mer si eeeewigkeite umegirrt, äuä öppe sibe mol im kreis, well di einte eifach unbedingt pommes hend welle ha. De einti lade wo mer häre sind het denne scho zue gha ond mer hei no di halbi grupppe verlore....irgendwenn simmer denne aber i Wok to walk gange, en mega geile wok takeaway, wie s wokami wo mer do hei. Super mitternachtssnack gsi. Eigentlech hemmer nächär alli zäme i ne club welle go, go party mache, ond mer sind zu eim gange neb em hostel aber denne het sech use gstellt, das de eifach erst ab 21 isch gsi...also de leander, marc ond ech sind gar ned erst ine cho...mer hei üs öppis ztrinke gno ond si i de hostel lounge uf nes sofa gläge ond hei kiss marry kill gspillt :) ond de simmer au irgendwie zu humane ziite weder zrügg is zimmer go pfuuse. am halbi drüü sind denne d joelle und svenja ins zimmer zrügg cho, ond oooh min gott isch d joelle betrunke gsi, halleluja! Si het di ganz ziit ume gschraue so "e be so vouuu" oder "leavemewthmy watermeloouuuunnn" xd also s isch mega mega funny gsi. si isch denne no zu mer is bett gläge ond het eifach nümme welle go haha, die isch halb uf mer druffe gläge ond het sech afe mol gmüetlech abgschminkt😅irgendwenn het sis de gschafft, ond isch go schlofe, im eigete bett :) Ond e glaub a dem punkt isch es für miich au ziit zum go pfuuse. also e schriibe de das morn fertig für d jael und mis online tagebuech, jz magi nümm. guet nacht :D
   </p>
+  <div *ngFor="let chapter of chapters">
+    <h2>{{ chapter.title }}</h2>
+    <h4>{{ chapter.date }}</h4>
+    <p *ngFor="let paragraph of chapter.paragraphs">{{ paragraph.content }}</p>
+  </div>
 </div>
